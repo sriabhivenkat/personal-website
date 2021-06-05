@@ -1,0 +1,89 @@
+
+.landingContainer1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, white 30%, #31C4BF );
+    object-fit: contain;
+    overflow-x: hidden;
+    border-top: 0.5px solid lightgray;
+    position: relative;
+  }
+  
+  .column1 {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .column2 {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landingContainer2 {
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    object-fit: contain;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+  }
+  .landingContainer2 > h3 {
+    font-size: 27px;
+    color: slategray;
+  }
+  .columnContainer {
+    width: 100%;
+    height: 63.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .rowContainer1 {
+    width: 55%;
+    height: 63.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding-left: 200px; */
+  }
+  .rowContainer2 {
+    width: 45%;
+    height: 63.5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 50px;
+  }
+  .rowboss{
+    height: 10vh;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  @media only screen and (min-width: 968px) {
+    
+  }
