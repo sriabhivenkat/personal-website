@@ -23,6 +23,7 @@ function Landing() {
                     <Polaroid image={polaroid1} />
                 </div>
             </div>
+            {/* <div></div> */}
             <div className="landingContainer2">
                 <h3>about me</h3>
                 <div className="columnContainer">
