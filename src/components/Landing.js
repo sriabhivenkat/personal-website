@@ -1,14 +1,29 @@
 import React from 'react';
 import './Landing.css';
-import {FaGithub, FaLinkedin, FaMedium, FaTwitter} from "react-icons/fa"
+import {
+    FaGithub, 
+    FaLinkedin, 
+    FaMedium, 
+    FaPython,
+    FaJs,
+    FaCloud,
+    FaReact,
+    FaGitAlt,
+    FaRobot,
+    FaMicrosoft,
+    FaCopyright,
+} from "react-icons/fa"
 import {IconContext} from "react-icons";
+import { DiGoogleCloudPlatform, DiCode } from "react-icons/di";
 import Polaroid from './Polaroid'
+import SkillCont from './SkillCont';
 import polaroid1 from '../assets/polaroid1.jpeg'
 import logo512 from '../assets/logo512.png'
+import { Link, Redirect } from 'react-router-dom';
 
 function Landing() {
     return(
-        <>
+        <div>
             <div className="landingContainer1">
                 <div className="column1">
                     <div>
@@ -30,10 +45,16 @@ function Landing() {
                     <div className="rowContainer1">
                         <h1 style={{fontWeight: 600}}>check me out!</h1>
                         <div className="rowboss">
-                            <IconContext.Provider value={{ style: {fontSize: '100px'}}}>
-                                <FaGithub/>
-                                <FaLinkedin style={{marginLeft: 30}}/>
-                                <FaMedium style={{marginLeft: 30}}/>
+                            <IconContext.Provider value={{ style: {fontSize: '100px'}, color: ["black"]}}>
+                                <a href="https://github.com/sriabhivenkat">
+                                    <FaGithub/>
+                                </a>
+                                <a href="https://www.linkedin.com/in/sriabhi-venkataraman-a1087319a/">
+                                    <FaLinkedin style={{marginLeft: 30}}/>
+                                </a>
+                                <a href="https://medium.com/@sriabhi01">
+                                    <FaMedium style={{marginLeft: 30}}/>
+                                </a>
                             </IconContext.Provider>
                         </div>
                     </div>
@@ -58,7 +79,63 @@ function Landing() {
                     </div>
                 </div>
             </div>
-        </>
+            <div className="landingContainer2">
+                <h3>important skills</h3>
+                <div className="columnContainer">
+                    <IconContext.Provider value={{ style: {fontSize: '80px', color: "rgb(0, 123, 255)"}}}>
+                        <div style={{display: "flex", flexDirection: "column", alignItems: 'center',}}>
+                            <div className="parentComp">
+                                <FaPython/>
+                            </div>
+                            <h5 style={{textAlign: "center"}}>Python</h5>
+                        </div>
+                        <div style={{display: "flex", flexDirection: "column", alignItems: 'center',}}>
+                            <div className="parentComp">
+                                <FaJs/>
+                            </div>
+                            <h5 style={{textAlign: "center"}}>JavaScript</h5>
+                        </div>
+                        <div style={{display: "flex", flexDirection: "column", alignItems: 'center',}}>
+                            <div className="parentComp">
+                                <DiGoogleCloudPlatform />
+                            </div>
+                            <h5 style={{textAlign: "center"}}>Google Cloud and Firebase</h5>
+                        </div>
+                        <div style={{display: "flex", flexDirection: "column", alignItems: 'center',}}>
+                            <div className="parentComp">
+                                <FaReact/>
+                            </div>
+                            <h5 style={{textAlign: "center"}}>React and React Native</h5>
+                        </div>
+                        <div style={{display: "flex", flexDirection: "column", alignItems: 'center',}}>
+                            <div className="parentComp">
+                                <FaGitAlt />
+                            </div>
+                            <h5 style={{textAlign: "center"}}>Git</h5>
+                        </div>
+                        <div style={{display: "flex", flexDirection: "column", alignItems: 'center',}}>
+                            <div className="parentComp">
+                                <FaRobot />
+                            </div>
+                            <h5 style={{textAlign: "center"}}>Data Science and Deep Learning Algorithms</h5>
+                        </div>
+                        <div style={{display: "flex", flexDirection: "column", alignItems: 'center',}}>
+                            <div className="parentComp">
+                                <FaMicrosoft />
+                            </div>
+                            <h5 style={{textAlign: "center"}}>Microsoft Azure</h5>
+                        </div>
+                        <div style={{display: "flex", flexDirection: "column", alignItems: 'center',}}>
+                            <div className="parentComp">
+                                <DiCode />
+                            </div>
+                            <h5 style={{textAlign: "center"}}>HTML5 and CSS</h5>
+                        </div>
+                    </IconContext.Provider>
+                </div>
+
+            </div>
+        </div>
     )
 }
 

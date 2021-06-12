@@ -6,10 +6,10 @@ import NavbarComp from '../NavbarComp.js'
 function LandingPage () {
     document.title = "Sriabhi's Website"
     return(
-        <>
+        <div>
             <NavbarComp />
             <Landing />
-        </>
+        </div>
     )
 }
 
